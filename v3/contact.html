@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aloqa - Husanbek</title>
+  <link rel="stylesheet" href="assets/css/uslub.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Yuklash Animatsiyasi -->
+  <div id="yuklash">
+    <div class="terminal">
+      <div class="terminal-header">
+        <div class="terminal-button"></div>
+        <div class="terminal-button"></div>
+        <div class="terminal-button"></div>
+        <div class="terminal-title">terminal</div>
+      </div>
+      <div class="terminal-body">
+        <div class="terminal-line">$ <span class="kod-satr">loading contact-page.js</span></div>
+        <div class="terminal-line terminal-progressbar">
+          <div class="progress"></div>
+        </div>
+        <div class="terminal-line">$ <span class="kod-satr">cd husanbek/contact</span></div>
+        <div class="terminal-line success">Aloqa sahifasi yuklandi! ✓</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3D Orqa fon -->
+  <canvas id="fon-canvas"></canvas>
+
+  <!-- Bosh qism -->
+  <header id="boshnav"></header>
+
+  <!-- Asosiy kontent -->
+  <main>
+    <section class="sahifa-sarlavha">
+      <div class="konteyner">
+        <h1 class="asosiy-sarlavha">✉️ Aloqa</h1>
+        <p class="sarlavha-tavsif">Men bilan bog'lanish va loyihangiz haqida gaplashish uchun</p>
+      </div>
+    </section>
+
+    <section class="aloqa-section">
+      <div class="konteyner">
+        <div class="aloqa-grid">
+          <div class="aloqa-forma-container" data-aos="fade-right">
+            <h2 class="bolim-sarlavha">Xabar yuborish</h2>
+            <form id="aloqa-forma" class="aloqa-forma">
+              <div class="forma-group">
+                <label for="ism">Ismingiz</label>
+                <input type="text" id="ism" name="ism" required>
+              </div>
+              <div class="forma-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="forma-group">
+                <label for="mavzu">Mavzu</label>
+                <input type="text" id="mavzu" name="mavzu" required>
+              </div>
+              <div class="forma-group">
+                <label for="xabar">Xabar</label>
+                <textarea id="xabar" name="xabar" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="tugma asosiy">
+                <i class="fas fa-paper-plane"></i> Yuborish
+              </button>
+            </form>
+          </div>
+          <div class="aloqa-info" data-aos="fade-left">
+            <h2 class="bolim-sarlavha">Bog'lanish ma'lumotlari</h2>
+            <div class="aloqa-info-elementlari">
+              <div class="aloqa-info-element">
+                <div class="aloqa-info-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="aloqa-info-matn">
+                  <h3>Email</h3>
+                  <p><a href="mailto:husanbek@gmail.com">husanbek@gmail.com</a></p>
+                </div>
+              </div>
+              <div class="aloqa-info-element">
+                <div class="aloqa-info-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="aloqa-info-matn">
+                  <h3>Telefon</h3>
+                  <p><a href="tel:+998901234567">+998 90 123 45 67</a></p>
+                </div>
+              </div>
+              <div class="aloqa-info-element">
+                <div class="aloqa-info-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="aloqa-info-matn">
+                  <h3>Manzil</h3>
+                  <p>Toshkent, O'zbekiston</p>
+                </div>
+              </div>
+            </div>
+            <div class="ijtimoiy-tarmoqlar">
+              <h3>Ijtimoiy tarmoqlar</h3>
+              <div class="ijtimoiy-havolalar">
+                <a href="https://github.com/" target="_blank" class="ijtimoiy-havola">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://t.me/" target="_blank" class="ijtimoiy-havola">
+                  <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://linkedin.com/" target="_blank" class="ijtimoiy-havola">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://instagram.com/" target="_blank" class="ijtimoiy-havola">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pastki qism -->
+  <footer id="pastki"></footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="assets/js/asosiy.js"></script>
+</body>
+</html>

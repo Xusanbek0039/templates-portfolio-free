@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loyihalarim - Husanbek — Full Stack Developer</title>
+    <link rel="stylesheet" href="assets/css/uslub.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body data-theme="dark">
+    <!-- Bosh Qism -->
+    <header class="bosh-qism">
+        <div class="logo">
+            <span class="logo-text">H</span>
+        </div>
+        <button class="menyu-tugma" aria-label="Menyuni ochish">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="til-tanlash">
+            <button class="til-tugma" data-til="uz">
+                <img src="assets/images/uzb.png" alt="O'zbek tili" width="24" height="24">
+            </button>
+            <button class="til-tugma" data-til="ru">
+                <img src="assets/images/ru.png" alt="Rus tili" width="24" height="24">
+            </button>
+        </div>
+        <button class="tema-tugma" aria-label="Temani o'zgartirish">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+        </button>
+    </header>
+
+    <!-- Navigatsiya Menyusi -->
+    <nav class="asosiy-menyu">
+        <div class="menyu-header">
+            <div class="user-info">
+                <div class="user-avatar">
+                    <img src="assets/images/avatar.jpg" alt="Husanbek">
+                </div>
+                <div class="user-name">
+                    <h3 data-lang="uz">Husanbek</h3>
+                    <h3 data-lang="ru">Хусанбек</h3>
+                    <p data-lang="uz">Full Stack Dasturchi</p>
+                    <p data-lang="ru">Full Stack Разработчик</p>
+                </div>
+            </div>
+            <button class="yopish-tugma">&times;</button>
+        </div>
+        <ul class="menyu-elementlari">
+            <li>
+                <a href="index.html">
+                    <i class="fas fa-home"></i>
+                    <span data-lang="uz">Bosh sahifa</span>
+                    <span data-lang="ru">Главная</span>
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    <i class="fas fa-user"></i>
+                    <span data-lang="uz">Men haqimda</span>
+                    <span data-lang="ru">Обо мне</span>
+                </a>
+            </li>
+            <li>
+                <a href="portfolio.html" class="active">
+                    <i class="fas fa-briefcase"></i>
+                    <span data-lang="uz">Loyihalarim</span>
+                    <span data-lang="ru">Проекты</span>
+                </a>
+            </li>
+            <li>
+                <a href="services.html">
+                    <i class="fas fa-cogs"></i>
+                    <span data-lang="uz">Xizmatlar</span>
+                    <span data-lang="ru">Услуги</span>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <i class="fas fa-envelope"></i>
+                    <span data-lang="uz">Aloqa</span>
+                    <span data-lang="ru">Контакты</span>
+                </a>
+            </li>
+            <li>
+                <a href="blog.html">
+                    <i class="fas fa-blog"></i>
+                    <span data-lang="uz">Blog</span>
+                    <span data-lang="ru">Блог</span>
+                </a>
+            </li>
+        </ul>
+        <div class="ijtimoiy-tarmoqlar">
+            <a href="https://github.com/" target="_blank" rel="noopener" class="ijtimoiy-link">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener" class="ijtimoiy-link">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://t.me/" target="_blank" rel="noopener" class="ijtimoiy-link">
+                <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://instagram.com/" target="_blank" rel="noopener" class="ijtimoiy-link">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Asosiy Kontent -->
+    <main class="sahifa-kontent">
+        <div class="sarlavha-blok">
+            <h1 class="sahifa-sarlavha">
+                <span data-lang="uz">Loyihalarim</span>
+                <span data-lang="ru">Мои проекты</span>
+            </h1>
+            <p class="sarlavha-tavsif">
+                <span data-lang="uz">Mening eng yaxshi ishlarim va loyihalarim</span>
+                <span data-lang="ru">Мои лучшие работы и проекты</span>
+            </p>
+        </div>
+
+        <div class="portfolio-filter">
+            <button class="filter-tugma active" data-filter="hammasi">
+                <span data-lang="uz">Hammasi</span>
+                <span data-lang="ru">Все</span>
+            </button>
+            <button class="filter-tugma" data-filter="veb">
+                <span data-lang="uz">Veb Saytlar</span>
+                <span data-lang="ru">Веб-сайты</span>
+            </button>
+            <button class="filter-tugma" data-filter="mobil">
+                <span data-lang="uz">Mobil Ilovalar</span>
+                <span data-lang="ru">Мобильные приложения</span>
+            </button>
+            <button class="filter-tugma" data-filter="dizayn">
+                <span data-lang="uz">UI/UX Dizayn</span>
+                <span data-lang="ru">UI/UX Дизайн</span>
+            </button>
+        </div>
+
+        <div class="portfolio-grid">
+            <!-- Loyiha 1 -->
+            <div class="portfolio-loyiha animate-scroll" data-category="veb">
+                <div class="loyiha-rasm">
+                    <img src="https://images.pexels.com/photos/326502/pexels-photo-326502.jpeg" alt="E-Commerce loyihasi">
+                    <div class="loyiha-overlay">
+                        <div class="loyiha-tugmalar">
+                            <button class="loyiha-tugma" data-loyiha="loyiha1">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://github.com/" target="_blank" class="loyiha-tugma">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" target="_blank" class="loyiha-tugma">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="loyiha-malumot">
+                    <h3 class="loyiha-nomi">
+                        <span data-lang="uz">E-Commerce Platformasi</span>
+                        <span data-lang="ru">Платформа электронной коммерции</span>
+                    </h3>
+                    <div class="texnologiyalar">
+                        <span class="texnologiya">React</span>
+                        <span class="texnologiya">Node.js</span>
+                        <span class="texnologiya">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Loyiha 2 -->
+            <div class="portfolio-loyiha animate-scroll" data-category="mobil" data-delay="100">
+                <div class="loyiha-rasm">
+                    <img src="https://images.pexels.com/photos/631986/pexels-photo-631986.jpeg" alt="Mobil ilova">
+                    <div class="loyiha-overlay">
+                        <div class="loyiha-tugmalar">
+                            <button class="loyiha-tugma" data-loyiha="loyiha2">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://github.com/" target="_blank" class="loyiha-tugma">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" target="_blank" class="loyiha-tugma">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="loyiha-malumot">
+                    <h3 class="loyiha-nomi">
+                        <span data-lang="uz">Yo'l Qo'llanmasi Ilovasi</span>
+                        <span data-lang="ru">Туристическое приложение</span>
+                    </h3>
+                    <div class="texnologiyalar">
+                        <span class="texnologiya">Flutter</span>
+                        <span class="texnologiya">Firebase</span>
+                        <span class="texnologiya">Maps API</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Loyiha 3 -->
+            <div class="portfolio-loyiha animate-scroll" data-category="veb" data-delay="200">
+                <div class="loyiha-rasm">
+                    <img src="https://images.pexels.com/photos/6804604/pexels-photo-6804604.jpeg" alt="Dasturiy ta'minot loyihasi">
+                    <div class="loyiha-overlay">
+                        <div class="loyiha-tugmalar">
+                            <button class="loyiha-tugma" data-loyiha="loyiha3">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://github.com/" target="_blank" class="loyiha-tugma">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" target="_blank" class="loyiha-tugma">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="loyiha-malumot">
+                    <h3 class="loyiha-nomi">
+                        <span data-lang="uz">CRM Tizimi</span>
+                        <span data-lang="ru">CRM Система</span>
+                    </h3>
+                    <div class="texnologiyalar">
+                        <span class="texnologiya">Django</span>
+                        <span class="texnologiya">PostgreSQL</span>
+                        <span class="texnologiya">Vue.js</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Loyiha 4 -->
+            <div class="portfolio-loyiha animate-scroll" data-category="dizayn" data-delay="300">
+                <div class="loyiha-rasm">
+                    <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg" alt="UI/UX Dizayn loyihasi">
+                    <div class="loyiha-overlay">
+                        <div class="loyiha-tugmalar">
+                            <button class="loyiha-tugma" data-loyiha="loyiha4">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://github.com/" target="_blank" class="loyiha-tugma">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" target="_blank" class="loyiha-tugma">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="loyiha-malumot">
+                    <h3 class="loyiha-nomi">
+                        <span data-lang="uz">Bank Ilova Dizayni</span>
+                        <span data-lang="ru">Дизайн банковского приложения</span>
+                    </h3>
+                    <div class="texnologiyalar">
+                        <span class="texnologiya">Figma</span>
+                        <span class="texnologiya">Sketch</span>
+                        <span class="texnologiya">Adobe XD</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Loyiha 5 -->
+            <div class="portfolio-loyiha animate-scroll" data-category="veb" data-delay="400">
+                <div class="loyiha-rasm">
+                    <img src="https://images.pexels.com/photos/3194521/pexels-photo-3194521.jpeg" alt="Veb ilova loyihasi">
+                    <div class="loyiha-overlay">
+                        <div class="loyiha-tugmalar">
+                            <button class="loyiha-tugma" data-loyiha="loyiha5">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://github.com/" target="_blank" class="loyiha-tugma">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" target="_blank" class="loyiha-tugma">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="loyiha-malumot">
+                    <h3 class="loyiha-nomi">
+                        <span data-lang="uz">Task Menejmenti</span>
+                        <span data-lang="ru">Управление задачами</span>
+                    </h3>
+                    <div class="texnologiyalar">
+                        <span class="texnologiya">React</span>
+                        <span class="texnologiya">Redux</span>
+                        <span class="texnologiya">Express</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Loyiha 6 -->
+            <div class="portfolio-loyiha animate-scroll" data-category="mobil" data-delay="500">
+                <div class="loyiha-rasm">
+                    <img src="https://images.pexels.com/photos/4065864/pexels-photo-4065864.jpeg" alt="Mobil o'yin loyihasi">
+                    <div class="loyiha-overlay">
+                        <div class="loyiha-tugmalar">
+                            <button class="loyiha-tugma" data-loyiha="loyiha6">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <a href="https://github.com/" target="_blank" class="loyiha-tugma">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" target="_blank" class="loyiha-tugma">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="loyiha-malumot">
+                    <h3 class="loyiha-nomi">
+                        <span data-lang="uz">Mobil O'yin</span>
+                        <span data-lang="ru">Мобильная игра</span>
+                    </h3>
+                    <div class="texnologiyalar">
+                        <span class="texnologiya">Unity</span>
+                        <span class="texnologiya">C#</span>
+                        <span class="texnologiya">AR Kit</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal oyna loyiha tafsilotlari uchun -->
+    <div class="modal" id="loyihaModal">
+        <div class="modal-content">
+            <button class="modal-yopish">&times;</button>
+            <div class="modal-body">
+                <!-- Modal kontenti JS bilan to'ldiriladi -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Pastki Qism -->
+    <footer class="pastki-qism">
+        <div class="pastki-matn">
+            <p>
+                <span data-lang="uz">&copy; 2025 Husanbek. Barcha huquqlar himoyalangan.</span>
+                <span data-lang="ru">&copy; 2025 Хусанбек. Все права защищены.</span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="assets/js/asosiy.js"></script>
+    <script src="assets/js/portfolio.js"></script>
+</body>
+</html>

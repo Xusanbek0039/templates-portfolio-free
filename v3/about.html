@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Men haqimda - Husanbek</title>
+  <link rel="stylesheet" href="assets/css/uslub.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Yuklash Animatsiyasi -->
+  <div id="yuklash">
+    <div class="terminal">
+      <div class="terminal-header">
+        <div class="terminal-button"></div>
+        <div class="terminal-button"></div>
+        <div class="terminal-button"></div>
+        <div class="terminal-title">terminal</div>
+      </div>
+      <div class="terminal-body">
+        <div class="terminal-line">$ <span class="kod-satr">loading about-page.js</span></div>
+        <div class="terminal-line terminal-progressbar">
+          <div class="progress"></div>
+        </div>
+        <div class="terminal-line">$ <span class="kod-satr">cd husanbek/about</span></div>
+        <div class="terminal-line success">Ma'lumotlar yuklandi! ✓</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3D Orqa fon -->
+  <canvas id="fon-canvas"></canvas>
+
+  <!-- Bosh qism -->
+  <header id="boshnav"></header>
+
+  <!-- Asosiy kontent -->
+  <main>
+    <section class="sahifa-sarlavha">
+      <div class="konteyner">
+        <h1 class="asosiy-sarlavha">👤 Men haqimda</h1>
+        <p class="sarlavha-tavsif">Mening tajribam, ko'nikmalarim va kasbiy yo'lim haqida ma'lumot</p>
+      </div>
+    </section>
+
+    <section class="haqimda-malumot">
+      <div class="konteyner">
+        <div class="haqimda-grid">
+          <div class="shaxsiy-malumot" data-aos="fade-right">
+            <h2 class="bolim-sarlavha">Tanishing</h2>
+            <p>Men Husanbek, Full Stack dasturchi sifatida 5 yildan ortiq tajribaga egaman. Men veb-ilovalarni yaratishni, yangi texnologiyalarni o'rganishni va murakkab muammolarni hal qilishni yaxshi ko'raman.</p>
+            <p>Toshkent Axborot Texnologiyalari Universitetida (TATU) Kompyuter muhandisligi yo'nalishini tugatganman. Hozirda zamonaviy veb-ilovalar yaratish bo'yicha loyihalarda faol ishlayman.</p>
+            <div class="shaxsiy-malumot-qatorlar">
+              <div class="shaxsiy-malumot-qator">
+                <strong>Ism:</strong> <span>Husanbek</span>
+              </div>
+              <div class="shaxsiy-malumot-qator">
+                <strong>Yosh:</strong> <span>28</span>
+              </div>
+              <div class="shaxsiy-malumot-qator">
+                <strong>Tajriba:</strong> <span>5+ yil</span>
+              </div>
+              <div class="shaxsiy-malumot-qator">
+                <strong>Joylashuv:</strong> <span>Toshkent, O'zbekiston</span>
+              </div>
+              <div class="shaxsiy-malumot-qator">
+                <strong>Email:</strong> <span>husanbek@gmail.com</span>
+              </div>
+              <div class="shaxsiy-malumot-qator">
+                <strong>Telefon:</strong> <span>+998 90 123 45 67</span>
+              </div>
+            </div>
+            <a href="assets/files/resume.pdf" class="tugma asosiy" download>
+              <i class="fas fa-download"></i> Rezumeni yuklash
+            </a>
+          </div>
+          <div class="tajriba-malumot" data-aos="fade-left">
+            <h2 class="bolim-sarlavha">Tajribam</h2>
+            <div class="tajriba-element">
+              <div class="tajriba-sana">2023 - Hozirda</div>
+              <div class="tajriba-lavozim">Senior Full Stack Dasturchi</div>
+              <div class="tajriba-kompaniya">TechSolutions UZ</div>
+              <p class="tajriba-tavsif">Katta loyihalar uchun texnik arhitekturani loyihalash va ishlab chiqish, jamoa a'zolariga mentorlik qilish, mijozlar bilan yaqin hamkorlik qilish.</p>
+            </div>
+            <div class="tajriba-element">
+              <div class="tajriba-sana">2020 - 2023</div>
+              <div class="tajriba-lavozim">Middle Full Stack Dasturchi</div>
+              <div class="tajriba-kompaniya">WebDev Group</div>
+              <p class="tajriba-tavsif">Frontend va backend tizimlarni ishlab chiqish, ma'lumotlar bazasi arxitekturasini yaratish, API integratsiyasi.</p>
+            </div>
+            <div class="tajriba-element">
+              <div class="tajriba-sana">2018 - 2020</div>
+              <div class="tajriba-lavozim">Frontend Dasturchi</div>
+              <div class="tajriba-kompaniya">Digital Solutions</div>
+              <p class="tajriba-tavsif">Saytlar va veb-ilovalar uchun interfeyslarni ishlab chiqish, JavaScript frameworklari bilan ishlash.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="talim-malumot">
+      <div class="konteyner">
+        <h2 class="bolim-sarlavha markazlash">Ta'lim</h2>
+        <div class="talim-plitkalar">
+          <div class="talim-plitka" data-aos="fade-up">
+            <div class="talim-yillar">2014 - 2018</div>
+            <h3 class="talim-darajasi">Bakalavr, Kompyuter Muhandisligi</h3>
+            <div class="talim-muassasa">Toshkent Axborot Texnologiyalari Universiteti (TATU)</div>
+            <p class="talim-tavsif">Kompyuter tizimlari, dasturlash tillari, ma'lumotlar tuzilmalari va algoritmlar bo'yicha chuqurlashtirilgan ta'lim.</p>
+          </div>
+          <div class="talim-plitka" data-aos="fade-up" data-aos-delay="100">
+            <div class="talim-yillar">2022</div>
+            <h3 class="talim-darajasi">Full Stack Development Kursi</h3>
+            <div class="talim-muassasa">Codecademy Pro</div>
+            <p class="talim-tavsif">Zamonaviy veb-texnologiyalar, React, Node.js va ma'lumotlar bazalari bo'yicha amaliy kurslar to'plami.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skill-malumot">
+      <div class="konteyner">
+        <h2 class="bolim-sarlavha markazlash">Ko'nikmalarim</h2>
+        <div class="skill-kategoriyalar">
+          <div class="skill-kategoriya" data-aos="fade-up">
+            <h3 class="skill-kategoriya-nomi">Frontend</h3>
+            <div class="skill-plitkalar">
+              <div class="skill-plitka">
+                <div class="skill-nomi">HTML5/CSS3</div>
+                <div class="skill-darajasi">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 95%"></div>
+                  </div>
+                  <span class="foiz">95%</span>
+                </div>
+              </div>
+              <div class="skill-plitka">
+                <div class="skill-nomi">JavaScript</div>
+                <div class="skill-darajasi">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 90%"></div>
+                  </div>
+                  <span class="foiz">90%</span>
+                </div>
+              </div>
+              <div class="skill-plitka">
+                <div class="skill-nomi">React</div>
+                <div class="skill-darajasi">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 85%"></div>
+                  </div>
+                  <span class="foiz">85%</span>
+                </div>
+              </div>
+              <div class="skill-plitka">
+                <div class="skill-nomi">Sass/SCSS</div>
+                <div class="skill-darajasi">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 80%"></div>
+                  </div>
+                  <span class="foiz">80%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-kategoriya" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="skill-kategoriya-nomi">Backend</h3>
+            <div class="skill-plitkalar">
+              <div class="skill-plitka">
+                <div class="skill-nomi">Python/Django</div>
+                <div class="skill-darajasi">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 88%"></div>
+                  </div>
+                  <span class="foiz">88%</span>
+                </div>
+              </div>
+              <div class="skill-plitka">
+                <div class="skill-nomi">Node.js</div>
+                <div class="skill-darajasi">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 82%"></div>
+                  </div>
+                  <span class="foiz">82%</span>
+                </div>
+              </div>
+              <div class="skill-plitka">
+                <div class="skill-nomi">SQL</div>
+                <div class="skill-darajasi">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 85%"></div>
+                  </div>
+                  <span class="foiz">85%</span>
+                </div>
+              </div>
+              <div class="skill-plitka">
+                <div class="skill-nomi">REST API</div>
+                <div class="skill-darajasi">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 90%"></div>
+                  </div>
+                  <span class="foiz">90%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pastki qism -->
+  <footer id="pastki"></footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="assets/js/asosiy.js"></script>
+</body>
+</html>

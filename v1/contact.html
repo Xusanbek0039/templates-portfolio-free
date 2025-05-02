@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aloqa — Husanbek</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Asosiy CSS -->
+    <link rel="stylesheet" href="assets/css/uslub.css">
+</head>
+<body>
+    <!-- Bosh nav -->
+    <header class="bosh-nav">
+        <div class="konteyner bosh-nav-konteyner">
+            <a href="index.html" class="logo">Husan<span>Dev</span></a>
+            
+            <button class="menu-tugma" aria-label="Menyuni ochish">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul class="nav-menyu">
+                    <li class="nav-punkt"><a href="index.html">
+                        <span data-lang="uz">Bosh sahifa</span>
+                        <span data-lang="ru">Главная</span>
+                    </a></li>
+                    <li class="nav-punkt"><a href="about.html">
+                        <span data-lang="uz">Men haqimda</span>
+                        <span data-lang="ru">Обо мне</span>
+                    </a></li>
+                    <li class="nav-punkt"><a href="portfolio.html">
+                        <span data-lang="uz">Loyihalar</span>
+                        <span data-lang="ru">Проекты</span>
+                    </a></li>
+                    <li class="nav-punkt"><a href="services.html">
+                        <span data-lang="uz">Xizmatlar</span>
+                        <span data-lang="ru">Услуги</span>
+                    </a></li>
+                    <li class="nav-punkt"><a href="contact.html" class="aktiv">
+                        <span data-lang="uz">Aloqa</span>
+                        <span data-lang="ru">Контакты</span>
+                    </a></li>
+                    <li class="nav-punkt"><a href="blog.html">
+                        <span data-lang="uz">Blog</span>
+                        <span data-lang="ru">Блог</span>
+                    </a></li>
+                </ul>
+            </nav>
+            
+            <div class="til-tugmalar">
+                <button class="til-tugma" data-til="uz">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Uzbekistan.svg/1200px-Flag_of_Uzbekistan.svg.png" alt="O'zbek tili">
+                </button>
+                <button class="til-tugma" data-til="ru">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/1200px-Flag_of_Russia.svg.png" alt="Русский язык">
+                </button>
+            </div>
+            
+            <button class="tema-tugma" aria-label="Temani o'zgartirish">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Sarlovha - Header -->
+    <section class="bolim" style="padding-top: 120px;">
+        <div class="konteyner">
+            <h1 class="bolim-sarlavha scroll-reveal">
+                <span data-lang="uz">Bog'lanish</span>
+                <span data-lang="ru">Связаться</span>
+            </h1>
+        </div>
+    </section>
+
+    <!-- Aloqa qismi - Contact section -->
+    <section class="bolim" style="padding-top: 0;">
+        <div class="konteyner">
+            <div class="aloqa-grid">
+                <form class="aloqa-forma scroll-reveal">
+                    <div class="forma-guruh">
+                        <label for="ismi" class="forma-label">
+                            <span data-lang="uz">Ismingiz</span>
+                            <span data-lang="ru">Ваше имя</span>
+                        </label>
+                        <input type="text" id="ismi" class="forma-input" required>
+                    </div>
+                    
+                    <div class="forma-guruh">
+                        <label for="email" class="forma-label">
+                            <span data-lang="uz">Email</span>
+                            <span data-lang="ru">Email</span>
+                        </label>
+                        <input type="email" id="email" class="forma-input" required>
+                    </div>
+                    
+                    <div class="forma-guruh">
+                        <label for="mavzu" class="forma-label">
+                            <span data-lang="uz">Mavzu</span>
+                            <span data-lang="ru">Тема</span>
+                        </label>
+                        <select id="mavzu" class="forma-input">
+                            <option value="konsultatsiya" data-lang="uz">Konsultatsiya</option>
+                            <option value="konsultatsiya" data-lang="ru">Консультация</option>
+                            <option value="loyiha" data-lang="uz">Loyiha takliflari</option>
+                            <option value="loyiha" data-lang="ru">Предложения проекта</option>
+                            <option value="hamkorlik" data-lang="uz">Hamkorlik takliflari</option>
+                            <option value="hamkorlik" data-lang="ru">Предложения сотрудничества</option>
+                            <option value="boshqa" data-lang="uz">Boshqa</option>
+                            <option value="boshqa" data-lang="ru">Другое</option>
+                        </select>
+                    </div>
+                    
+                    <div class="forma-guruh">
+                        <label for="xabar" class="forma-label">
+                            <span data-lang="uz">Xabar</span>
+                            <span data-lang="ru">Сообщение</span>
+                        </label>
+                        <textarea id="xabar" class="forma-textarea" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="tugma">
+                        <span data-lang="uz">Yuborish</span>
+                        <span data-lang="ru">Отправить</span>
+                    </button>
+                </form>
+                
+                <div class="aloqa-info scroll-reveal">
+                    <div class="aloqa-item">
+                        <div class="aloqa-ikon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="aloqa-matn">
+                            <h4>
+                                <span data-lang="uz">Manzil</span>
+                                <span data-lang="ru">Адрес</span>
+                            </h4>
+                            <p>
+                                <span data-lang="uz">Toshkent, O'zbekiston</span>
+                                <span data-lang="ru">Ташкент, Узбекистан</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="aloqa-item">
+                        <div class="aloqa-ikon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="aloqa-matn">
+                            <h4>Email</h4>
+                            <p>husandev@example.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="aloqa-item">
+                        <div class="aloqa-ikon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="aloqa-matn">
+                            <h4>
+                                <span data-lang="uz">Telefon</span>
+                                <span data-lang="ru">Телефон</span>
+                            </h4>
+                            <p>+998 90 123 45 67</p>
+                        </div>
+                    </div>
+                    
+                    <div class="aloqa-item">
+                        <div class="aloqa-ikon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="aloqa-matn">
+                            <h4>
+                                <span data-lang="uz">Ish vaqti</span>
+                                <span data-lang="ru">Рабочее время</span>
+                            </h4>
+                            <p>
+                                <span data-lang="uz">Dushanba - Juma: 9:00 - 18:00</span>
+                                <span data-lang="ru">Понедельник - Пятница: 9:00 - 18:00</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="ijtimoiy-tarmoqlar">
+                        <a href="#" class="ijtimoiy-link" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="ijtimoiy-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="ijtimoiy-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="ijtimoiy-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Xarita - Map -->
+    <section class="bolim">
+        <div class="konteyner">
+            <h2 class="bolim-sarlavha scroll-reveal">
+                <span data-lang="uz">Xarita</span>
+                <span data-lang="ru">Карта</span>
+            </h2>
+            
+            <div class="scroll-reveal" style="border-radius: var(--kichik-hajm); overflow: hidden; box-shadow: var(--orta-soya);">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191885.50263994394!2d69.13928274871224!3d41.282737954283715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2z0KLQsNGI0LrQtdC90YIsINCj0LfQsdC10LrQuNGB0YLQsNC9!5e0!3m2!1sru!2s!4v1653554854161!5m2!1sru!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pastki qism - Footer -->
+    <footer class="pastki">
+        <div class="konteyner">
+            <div class="pastki-grid">
+                <div class="pastki-info">
+                    <a href="index.html" class="logo">Husan<span>Dev</span></a>
+                    <p>
+                        <span data-lang="uz">Zamonaviy web ilovalar va loyihalar yaratishda 5+ yillik tajriba</span>
+                        <span data-lang="ru">Более 5 лет опыта в создании современных веб-приложений и проектов</span>
+                    </p>
+                </div>
+                
+                <div class="pastki-bolim">
+                    <h3 class="pastki-sarlavha">
+                        <span data-lang="uz">Havola</span>
+                        <span data-lang="ru">Ссылки</span>
+                    </h3>
+                    <ul class="pastki-links">
+                        <li class="pastki-link"><a href="index.html">
+                            <span data-lang="uz">Bosh sahifa</span>
+                            <span data-lang="ru">Главная</span>
+                        </a></li>
+                        <li class="pastki-link"><a href="about.html">
+                            <span data-lang="uz">Men haqimda</span>
+                            <span data-lang="ru">Обо мне</span>
+                        </a></li>
+                        <li class="pastki-link"><a href="portfolio.html">
+                            <span data-lang="uz">Loyihalar</span>
+                            <span data-lang="ru">Проекты</span>
+                        </a></li>
+                        <li class="pastki-link"><a href="services.html">
+                            <span data-lang="uz">Xizmatlar</span>
+                            <span data-lang="ru">Услуги</span>
+                        </a></li>
+                        <li class="pastki-link"><a href="contact.html">
+                            <span data-lang="uz">Aloqa</span>
+                            <span data-lang="ru">Контакты</span>
+                        </a></li>
+                        <li class="pastki-link"><a href="blog.html">
+                            <span data-lang="uz">Blog</span>
+                            <span data-lang="ru">Блог</span>
+                        </a></li>
+                    </ul>
+                </div>
+                
+                <div class="pastki-bolim">
+                    <h3 class="pastki-sarlavha">
+                        <span data-lang="uz">Obuna bo'ling</span>
+                        <span data-lang="ru">Подпишитесь</span>
+                    </h3>
+                    <div class="pastki-ijtimoiy">
+                        <a href="#" class="ijtimoiy-link" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="ijtimoiy-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="ijtimoiy-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="ijtimoiy-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mualliflik">
+                <p>
+                    <span data-lang="uz">&copy; 2025 HusanDev. Barcha huquqlar himoyalangan.</span>
+                    <span data-lang="ru">&copy; 2025 HusanDev. Все права защищены.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Asosiy JavaScript -->
+    <script src="assets/js/asosiy.js"></script>
+</body>
+</html>

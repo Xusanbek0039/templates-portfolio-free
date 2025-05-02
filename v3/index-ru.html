@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Хусанбек - Full Stack Разработчик</title>
+  <link rel="stylesheet" href="assets/css/uslub.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Анимация загрузки -->
+  <div id="yuklash">
+    <div class="terminal">
+      <div class="terminal-header">
+        <div class="terminal-button"></div>
+        <div class="terminal-button"></div>
+        <div class="terminal-button"></div>
+        <div class="terminal-title">терминал</div>
+      </div>
+      <div class="terminal-body">
+        <div class="terminal-line">$ <span class="kod-satr">npm install husanbek-portfolio</span></div>
+        <div class="terminal-line terminal-progressbar">
+          <div class="progress"></div>
+        </div>
+        <div class="terminal-line">$ <span class="kod-satr">cd husanbek-portfolio</span></div>
+        <div class="terminal-line">$ <span class="kod-satr">npm start</span></div>
+        <div class="terminal-line success">Портфолио загружено! ✓</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3D Фон -->
+  <canvas id="fon-canvas"></canvas>
+
+  <!-- Шапка сайта -->
+  <header id="boshnav"></header>
+
+  <!-- Основной контент -->
+  <main>
+    <section class="kirish">
+      <div class="konteyner">
+        <div class="kirish-matn">
+          <p class="salom">Привет, я</p>
+          <h1 class="ism">Хусанбек</h1>
+          <h2 class="kasb">Full Stack Разработчик</h2>
+          <p class="tavsif">Имею опыт в разработке frontend и backend веб-приложений.</p>
+          <div class="tugmalar">
+            <a href="contact-ru.html" class="tugma asosiy">Напишите мне</a>
+            <a href="portfolio-ru.html" class="tugma ikkilamchi">Посмотреть работы</a>
+          </div>
+        </div>
+        <div class="kirish-rasm">
+          <div class="rasm-ramka">
+            <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg" alt="Хусанбек" class="profil-rasm">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="texnologiyalar">
+      <div class="konteyner">
+        <h2 class="bolim-sarlavha">Технологии, с которыми я работаю</h2>
+        <div class="texnologiya-plitkalari">
+          <div class="texnologiya-plitka" data-aos="fade-up" data-aos-delay="100">
+            <i class="fab fa-html5"></i>
+            <h3>HTML5</h3>
+          </div>
+          <div class="texnologiya-plitka" data-aos="fade-up" data-aos-delay="200">
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS3</h3>
+          </div>
+          <div class="texnologiya-plitka" data-aos="fade-up" data-aos-delay="300">
+            <i class="fab fa-js"></i>
+            <h3>JavaScript</h3>
+          </div>
+          <div class="texnologiya-plitka" data-aos="fade-up" data-aos-delay="400">
+            <i class="fab fa-react"></i>
+            <h3>React</h3>
+          </div>
+          <div class="texnologiya-plitka" data-aos="fade-up" data-aos-delay="500">
+            <i class="fab fa-python"></i>
+            <h3>Python</h3>
+          </div>
+          <div class="texnologiya-plitka" data-aos="fade-up" data-aos-delay="600">
+            <i class="fa-solid fa-database"></i>
+            <h3>SQL</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="loyihalar-qisqa">
+      <div class="konteyner">
+        <h2 class="bolim-sarlavha">Последние проекты</h2>
+        <div class="loyihalar-plitkalar">
+          <div class="loyiha-plitka" data-aos="fade-up">
+            <div class="loyiha-rasm">
+              <img src="https://images.pexels.com/photos/5474295/pexels-photo-5474295.jpeg" alt="Проект E-commerce">
+            </div>
+            <div class="loyiha-matn">
+              <h3>Интернет-магазин</h3>
+              <p>Полноценная e-commerce платформа, созданная с использованием Django и JavaScript</p>
+              <div class="texnologiyalar-yorliqlar">
+                <span>Django</span>
+                <span>JavaScript</span>
+                <span>PostgreSQL</span>
+              </div>
+              <a href="portfolio-ru.html" class="tugma kichik">Подробнее</a>
+            </div>
+          </div>
+          <div class="loyiha-plitka" data-aos="fade-up" data-aos-delay="100">
+            <div class="loyiha-rasm">
+              <img src="https://images.pexels.com/photos/4348401/pexels-photo-4348401.jpeg" alt="CRM система">
+            </div>
+            <div class="loyiha-matn">
+              <h3>CRM Система</h3>
+              <p>Система управления взаимоотношениями с клиентами для бизнеса</p>
+              <div class="texnologiyalar-yorliqlar">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+              </div>
+              <a href="portfolio-ru.html" class="tugma kichik">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="markazlash">
+          <a href="portfolio-ru.html" class="tugma ikkilamchi">Посмотреть все проекты</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="motivatsiya">
+      <div class="konteyner">
+        <div class="iqtibos">
+          <i class="fa-solid fa-quote-left"></i>
+          <p id="iqtibos-matn">Написание кода - это искусство. Каждая строка кода - это ваша личная подпись.</p>
+          <p id="iqtibos-muallif">— Хусанбек</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал сайта -->
+  <footer id="pastki"></footer>
+
+  <!-- Скрипты -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="assets/js/asosiy.js"></script>
+</body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Husanbek — Full Stack Developer</title>
+    <link rel="stylesheet" href="assets/css/uslub.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body data-theme="dark">
+    <!-- Bosh Qism -->
+    <header class="bosh-qism">
+        <div class="logo">
+            <span class="logo-text">H</span>
+        </div>
+        <button class="menyu-tugma" aria-label="Menyuni ochish">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="til-tanlash">
+            <button class="til-tugma" data-til="uz">
+                <img src="assets/images/uzb.png" alt="O'zbek tili" width="24" height="24">
+            </button>
+            <button class="til-tugma" data-til="ru">
+                <img src="assets/images/ru.png" alt="Rus tili" width="24" height="24">
+            </button>
+        </div>
+        <button class="tema-tugma" aria-label="Temani o'zgartirish">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+        </button>
+    </header>
+
+    <!-- Navigatsiya Menyusi -->
+    <nav class="asosiy-menyu">
+        <div class="menyu-header">
+            <div class="user-info">
+                <div class="user-avatar">
+                    <img src="assets/images/avatar.jpg" alt="Husanbek">
+                </div>
+                <div class="user-name">
+                    <h3 data-lang="uz">Husanbek</h3>
+                    <h3 data-lang="ru">Хусанбек</h3>
+                    <p data-lang="uz">Full Stack Dasturchi</p>
+                    <p data-lang="ru">Full Stack Разработчик</p>
+                </div>
+            </div>
+            <button class="yopish-tugma">&times;</button>
+        </div>
+        <ul class="menyu-elementlari">
+            <li>
+                <a href="index.html">
+                    <i class="fas fa-home"></i>
+                    <span data-lang="uz">Bosh sahifa</span>
+                    <span data-lang="ru">Главная</span>
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    <i class="fas fa-user"></i>
+                    <span data-lang="uz">Men haqimda</span>
+                    <span data-lang="ru">Обо мне</span>
+                </a>
+            </li>
+            <li>
+                <a href="portfolio.html">
+                    <i class="fas fa-briefcase"></i>
+                    <span data-lang="uz">Loyihalarim</span>
+                    <span data-lang="ru">Проекты</span>
+                </a>
+            </li>
+            <li>
+                <a href="services.html">
+                    <i class="fas fa-cogs"></i>
+                    <span data-lang="uz">Xizmatlar</span>
+                    <span data-lang="ru">Услуги</span>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <i class="fas fa-envelope"></i>
+                    <span data-lang="uz">Aloqa</span>
+                    <span data-lang="ru">Контакты</span>
+                </a>
+            </li>
+            <li>
+                <a href="blog.html" class="active">
+                    <i class="fas fa-blog"></i>
+                    <span data-lang="uz">Blog</span>
+                    <span data-lang="ru">Блог</span>
+                </a>
+            </li>
+        </ul>
+        <div class="ijtimoiy-tarmoqlar">
+            <a href="https://github.com/" target="_blank" rel="noopener" class="ijtimoiy-link">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener" class="ijtimoiy-link">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://t.me/" target="_blank" rel="noopener" class="ijtimoiy-link">
+                <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://instagram.com/" target="_blank" rel="noopener" class="ijtimoiy-link">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Asosiy Kontent -->
+    <main class="sahifa-kontent">
+        <div class="sarlavha-blok">
+            <h1 class="sahifa-sarlavha">
+                <span data-lang="uz">Blog</span>
+                <span data-lang="ru">Блог</span>
+            </h1>
+            <p class="sarlavha-tavsif">
+                <span data-lang="uz">Veb dasturlash va texnologiyalar haqida maqolalarim</span>
+                <span data-lang="ru">Мои статьи о веб-разработке и технологиях</span>
+            </p>
+        </div>
+
+        <div class="blog-filter">
+            <button class="filter-tugma active" data-filter="hammasi">
+                <span data-lang="uz">Hammasi</span>
+                <span data-lang="ru">Все</span>
+            </button>
+            <button class="filter-tugma" data-filter="frontend">
+                <span data-lang="uz">Frontend</span>
+                <span data-lang="ru">Фронтенд</span>
+            </button>
+            <button class="filter-tugma" data-filter="backend">
+                <span data-lang="uz">Backend</span>
+                <span data-lang="ru">Бэкенд</span>
+            </button>
+            <button class="filter-tugma" data-filter="ux">
+                <span data-lang="uz">UX/UI</span>
+                <span data-lang="ru">UX/UI</span>
+            </button>
+        </div>
+
+        <div class="blog-grid">
+            <!-- Blog post 1 -->
+            <article class="blog-post animate-scroll" data-category="frontend">
+                <div class="blog-rasm">
+                    <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg" alt="JavaScript haqida">
+                </div>
+                <div class="blog-malumot">
+                    <div class="blog-meta">
+                        <span class="blog-sana">12 May, 2025</span>
+                        <span class="blog-kategoriya">Frontend</span>
+                    </div>
+                    <h2 class="blog-sarlavha">
+                        <span data-lang="uz">JavaScript-da Zamonaviy Asinxron Dasturlash</span>
+                        <span data-lang="ru">Современное асинхронное программирование в JavaScript</span>
+                    </h2>
+                    <p class="blog-qisqa" data-lang="uz">
+                        JavaScript-da asinxron dasturlashning zamonaviy usullari, Promises, async/await va ularni real loyihalarda qo'llash haqida...
+                    </p>
+                    <p class="blog-qisqa" data-lang="ru">
+                        О современных методах асинхронного программирования в JavaScript, Promises, async/await и их применении в реальных проектах...
+                    </p>
+                    <a href="#" class="blog-link">
+                        <span data-lang="uz">Ko'proq o'qish</span>
+                        <span data-lang="ru">Читать далее</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Blog post 2 -->
+            <article class="blog-post animate-scroll" data-category="backend" data-delay="100">
+                <div class="blog-rasm">
+                    <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg" alt="Python Django haqida">
+                </div>
+                <div class="blog-malumot">
+                    <div class="blog-meta">
+                        <span class="blog-sana">5 May, 2025</span>
+                        <span class="blog-kategoriya">Backend</span>
+                    </div>
+                    <h2 class="blog-sarlavha">
+                        <span data-lang="uz">Django REST Framework orqali kuchli API yaratish</span>
+                        <span data-lang="ru">Создание мощного API с Django REST Framework</span>
+                    </h2>
+                    <p class="blog-qisqa" data-lang="uz">
+                        Django REST Framework yordamida zamonaviy, xavfsiz va tez ishlaydigan API larni qanday yaratish mumkin...
+                    </p>
+                    <p class="blog-qisqa" data-lang="ru">
+                        Как создать современный, безопасный и быстрый API с помощью Django REST Framework...
+                    </p>
+                    <a href="#" class="blog-link">
+                        <span data-lang="uz">Ko'proq o'qish</span>
+                        <span data-lang="ru">Читать далее</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Blog post 3 -->
+            <article class="blog-post animate-scroll" data-category="ux" data-delay="200">
+                <div class="blog-rasm">
+                    <img src="https://images.pexels.com/photos/196646/pexels-photo-196646.jpeg" alt="UX Design haqida">
+                </div>
+                <div class="blog-malumot">
+                    <div class="blog-meta">
+                        <span class="blog-sana">29 April, 2025</span>
+                        <span class="blog-kategoriya">UX/UI</span>
+                    </div>
+                    <h2 class="blog-sarlavha">
+                        <span data-lang="uz">Foydalanuvchi tajribasi va mobil dizayn prinsiplari</span>
+                        <span data-lang="ru">Принципы пользовательского опыта и мобильного дизайна</span>
+                    </h2>
+                    <p class="blog-qisqa" data-lang="uz">
+                        Mobil foydalanuvchi interfeyslarini loyihalashda e'tiborga olish kerak bo'lgan muhim prinsiplar...
+                    </p>
+                    <p class="blog-qisqa" data-lang="ru">
+                        Важные принципы, которые следует учитывать при проектировании мобильных пользовательских интерфейсов...
+                    </p>
+                    <a href="#" class="blog-link">
+                        <span data-lang="uz">Ko'proq o'qish</span>
+                        <span data-lang="ru">Читать далее</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Blog post 4 -->
+            <article class="blog-post animate-scroll" data-category="frontend" data-delay="300">
+                <div class="blog-rasm">
+                    <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg" alt="CSS haqida">
+                </div>
+                <div class="blog-malumot">
+                    <div class="blog-meta">
+                        <span class="blog-sana">20 April, 2025</span>
+                        <span class="blog-kategoriya">Frontend</span>
+                    </div>
+                    <h2 class="blog-sarlavha">
+                        <span data-lang="uz">Zamonaviy CSS texnikalar va Grid layout</span>
+                        <span data-lang="ru">Современные техники CSS и Grid layout</span>
+                    </h2>
+                    <p class="blog-qisqa" data-lang="uz">
+                        CSS Grid layoutdan foydalanib murakkab va moslashuvchan tartiblarni qanday yaratish mumkin...
+                    </p>
+                    <p class="blog-qisqa" data-lang="ru">
+                        Как создавать сложные и гибкие макеты с использованием CSS Grid layout...
+                    </p>
+                    <a href="#" class="blog-link">
+                        <span data-lang="uz">Ko'proq o'qish</span>
+                        <span data-lang="ru">Читать далее</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Blog post 5 -->
+            <article class="blog-post animate-scroll" data-category="backend" data-delay="400">
+                <div class="blog-rasm">
+                    <img src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg" alt="Node.js haqida">
+                </div>
+                <div class="blog-malumot">
+                    <div class="blog-meta">
+                        <span class="blog-sana">14 April, 2025</span>
+                        <span class="blog-kategoriya">Backend</span>
+                    </div>
+                    <h2 class="blog-sarlavha">
+                        <span data-lang="uz">Node.js va Express ishlab chiqishda eng yaxshi amaliyotlar</span>
+                        <span data-lang="ru">Лучшие практики разработки на Node.js и Express</span>
+                    </h2>
+                    <p class="blog-qisqa" data-lang="uz">
+                        Node.js va Express.js frameworkidan foydalanib kengaytirilgan veb-ilovalarni qanday yaratish...
+                    </p>
+                    <p class="blog-qisqa" data-lang="ru">
+                        Как создавать масштабируемые веб-приложения с использованием Node.js и фреймворка Express.js...
+                    </p>
+                    <a href="#" class="blog-link">
+                        <span data-lang="uz">Ko'proq o'qish</span>
+                        <span data-lang="ru">Читать далее</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Blog post 6 -->
+            <article class="blog-post animate-scroll" data-category="ux" data-delay="500">
+                <div class="blog-rasm">
+                    <img src="https://images.pexels.com/photos/326513/pexels-photo-326513.jpeg" alt="UI Trends haqida">
+                </div>
+                <div class="blog-malumot">
+                    <div class="blog-meta">
+                        <span class="blog-sana">5 April, 2025</span>
+                        <span class="blog-kategoriya">UX/UI</span>
+                    </div>
+                    <h2 class="blog-sarlavha">
+                        <span data-lang="uz">2025-yil UI Dizayn tendensiyalari</span>
+                        <span data-lang="ru">Тенденции UI дизайна 2025 года</span>
+                    </h2>
+                    <p class="blog-qisqa" data-lang="uz">
+                        Zamonaviy veb va mobil ilovalar dizaynida eng so'nggi tendensiyalar va yangi yondashuvlar...
+                    </p>
+                    <p class="blog-qisqa" data-lang="ru">
+                        Последние тенденции и новые подходы в дизайне современных веб и мобильных приложений...
+                    </p>
+                    <a href="#" class="blog-link">
+                        <span data-lang="uz">Ko'proq o'qish</span>
+                        <span data-lang="ru">Читать далее</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Pastki Qism -->
+    <footer class="pastki-qism">
+        <div class="pastki-matn">
+            <p>
+                <span data-lang="uz">&copy; 2025 Husanbek. Barcha huquqlar himoyalangan.</span>
+                <span data-lang="ru">&copy; 2025 Хусанбек. Все права защищены.</span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="assets/js/asosiy.js"></script>
+    <script src="assets/js/blog.js"></script>
+</body>
+</html>
